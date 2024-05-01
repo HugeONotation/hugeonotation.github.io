@@ -1,0 +1,163 @@
+$primary-font-color: #E0E0E0; 
+$primary-font-families: Arial, sans-serif;
+
+$main-div-color: #303030; 
+$main-div-border-color: #333333;
+
+$paragraph_border_radius: 0.4em;
+$content_background_color: #393939;
+$content_font_families: Arial, sans-serif;
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-image: url("/assets/images/blog_background.png");
+    background-size: 18px;
+    background-color : #232323;
+}
+
+a:link {
+    font-family: $primary-font-families;
+    font-size: 1em;
+    font-weight: normal;
+
+    color: $primary-font-color;
+
+    margin-top:    0.0em;
+    margin-bottom: 0.0em;
+    margin-left:   0.0em;
+    margin-right:  0.0em;
+
+    padding-top:    0.0em;
+    padding-bottom: 0.0em;
+    padding-left:   0.0em;
+    padding-right:  0.0em;
+}
+
+a:visited {
+    font-family: $primary-font-families;
+    font-size: 1em;
+    font-weight: normal;
+
+    color: #A0A0A0;
+
+    margin-top:    0.0em;
+    margin-bottom: 0.0em;
+    margin-left:   0.0em;
+    margin-right:  0.0em;
+
+    padding-top:    0.0em;
+    padding-bottom: 0.0em;
+    padding-left:   0.0em;
+    padding-right:  0.0em;
+}
+
+p {
+    background-color : $content_background_color;
+    
+    border-top-left-radius: $paragraph_border_radius;
+    border-top-right-radius: $paragraph_border_radius;
+    
+    border-bottom-left-radius: $paragraph_border_radius;
+    border-bottom-right-radius: $paragraph_border_radius;
+
+    color: #E0E0E0;
+    font-family: $content_font_families;
+    font-size : 1.2em;
+
+    line-height: 1.7em;
+
+    text-indent: 2em;
+
+    padding-top:    0.5em;
+    padding-bottom: 0.5em;
+    padding-left:   1em;
+    padding-right:  1em;
+
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+p + p {
+    margin-top: -$paragraph_border_radius;
+    margin-bottom: 0em;
+
+    padding-top: $paragraph_border_radius;
+
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    
+    border-bottom-left-radius: $paragraph_border_radius;
+    border-bottom-right-radius: $paragraph_border_radius;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+@media screen and (orientation:portrait) {
+    div.main_div {
+        background-color : $main-div-color;
+
+        width: 95%;
+        min-width: 90%;
+        max-width: 95%;
+
+        line-height: 1.45;
+        text-align: center;
+        text-align: left;
+
+        justify-content: center;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+
+        padding-top: 1px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 12px;
+
+        border-radius: 6px;
+
+        border: solid $main-div-border-color 1px;
+    }
+
+}
+
+@media screen and (orientation:landscape) {
+    div.main_div {
+        background-color : $main-div-color;
+
+        width: 45%;
+        min-width: 40em;
+        max-width: 95%;
+
+        line-height: 1.45;
+        text-align: center;
+        text-align: left;
+
+        justify-content: center;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+
+        padding-top: 1px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 12px;
+        
+        border-radius: 6px;
+
+        border: solid $main-div-border-color 1px;
+    }
+}

@@ -1,0 +1,243 @@
+---
+---
+
+@import 'site_shared';
+
+$primary-font-color: #E0E0E0;
+
+$heading_color: #e8e8e8;
+$heading_shadow_color : #f0f0f0;
+$heading_shadow_blur_radius : 0.5px;
+
+body {
+    background-image: url('/assets/images/blog_background.png');
+    background-size: 18px;
+    background-color : #232323;
+}
+
+div.post_listing {
+    background-color : #404040;
+    text-align: left;
+
+    padding-top: 9px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+
+    border-radius: 4px;
+
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+}
+
+div.row {
+    display: flex;
+}
+
+div.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+h1 {
+    text-align: center;
+    text-indent: 0.5em;
+    
+    color: $heading_color;
+    
+    font-family: Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 1.9em;
+
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+
+    //background:#3d3d3d;
+    border-radius: 6px;
+
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+h2 {
+    text-align: left;
+    text-indent: 0px;
+
+    color: $heading_color;
+    text-shadow: 0px 0px $heading_shadow_blur_radius $heading_shadow_color;
+
+    font-family: Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 1.5em;
+
+    margin-top: 1.0em;
+    margin-bottom: 0.5em;
+
+    //background:#3d3d3d;
+    border-radius: 6px;
+
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-left: 0.5em;
+    padding-right: 0.25em;
+}
+
+h3 {
+    text-align: left;
+    text-indent: 0em;
+
+
+    color: $heading_color;
+    text-shadow: 0px 0px $heading_shadow_blur_radius $heading_shadow_color;
+
+    font-family: Tahoma, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+
+    padding-left: 0.5em;
+}
+
+h4 {
+    text-align: left;
+    text-indent: 0em;
+
+    color: $heading_color;
+    text-shadow: 0px 0px $heading_shadow_blur_radius $heading_shadow_color;
+
+    font-family: Tahoma, sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+
+p {
+    color: $primary-font-color;
+    font-family: Tahoma, sans-serif;
+    font-size : 1em;
+
+    line-height: 1.7em;
+
+    text-indent: 2em;
+
+    padding-top: 0.25em;
+    padding-bottom: 0em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+p.super_title {
+    display: flex;
+    justify-content: space-between;
+
+    color: $primary-font-color;
+    font-family: Tahoma, sans-serif;
+    font-size : 0.85em;
+
+    line-height: 1.7em;
+
+    text-indent: 0em;
+    text-align: right;
+
+    padding: auto;
+
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+
+    margin-top: 0.5em;
+    margin-bottom: auto;
+}
+
+p.post_desc {
+    text-indent: 0em;
+}
+
+table {
+    color: $primary-font-color;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+
+    width: 75%;
+    border: 1px solid;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+
+    margin-left: auto; 
+    margin-right: auto;
+
+    text-align: center;
+}
+
+table.wide {
+    width: 95%;
+}
+
+table.narrow {
+    width: 40%;
+}
+
+th.slant {
+    transform:
+        translate(315deg)
+}
+
+ul {
+    color: $primary-font-color;
+    font-family: Tahoma, sans-serif;
+    padding-left: 2em;
+    font-size: 0.9em;
+}
+
+.centered_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.centered_image_narrow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+
+.centered_image_wide {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+code {
+    color: $primary-font-color;
+    font-size: 1em;
+    font-family: Courier, Courier New, monospace;
+    font-weight: normal;
+}
+
+.language-plaintext {
+    color: $primary-font-color;
+    font-size: 1em;
+    font-family: Courier, Courier New, monospace;
+    font-weight: normal;
+}
+
+.language-code_block {
+    color: $primary-font-color;
+    font-size: 1em;
+    font-family: Courier, Courier New, monospace;
+    font-weight: normal; 
+
+    display: block;
+    overflow: auto;
+    width: auto;
+}

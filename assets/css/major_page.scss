@@ -1,0 +1,68 @@
+---
+---
+
+@import 'common';
+
+h1 {
+    font-family: $primary-font-families;
+    text-align: center;
+    font-size: 4em;
+
+    color: $primary-font-color;
+
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-family: $primary-font-families;
+    text-align: left;
+
+    color: $primary-font-color;
+}
+
+h3 {
+    font-family: $primary-font-families;
+    text-align: left;
+
+    color: $primary-font-color;
+}
+
+h4 {
+    font-family: $primary-font-families;
+    text-align: left;
+
+    color: $primary-font-color;
+}
+
+.logo_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    width: 37.5%;
+}
+
+.icon_image {
+    display: block;
+
+    margin-left:  1em;
+    margin-right: 1em;
+
+    width: 4em;
+    height: 4em;
+}
+
+.icon_container {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+    
+    width: 100%;
+    margin: auto;
+}
