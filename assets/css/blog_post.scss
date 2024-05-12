@@ -73,14 +73,14 @@ h2 {
     font-weight: normal;
     font-size: 1.5em;
 
-    margin-top: 1.0em;
+    margin-top: 0.5em;
     margin-bottom: 0.5em;
 
     //background:#3d3d3d;
     border-radius: 6px;
 
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
+    padding-top: 0em;
+    padding-bottom: 0em;
     padding-left: 0.5em;
     padding-right: 0.25em;
 }
@@ -122,8 +122,8 @@ p {
 
     text-indent: 2em;
 
-    padding-top: 0.25em;
-    padding-bottom: 0em;
+    padding-top: 0.125em;
+    padding-bottom: 0.125em;
     padding-left: 0.5em;
     padding-right: 0.5em;
 
@@ -153,8 +153,42 @@ p.super_title {
     margin-bottom: auto;
 }
 
+.small_text {
+    font-size : 0.85em;
+}
+
+div.post_listing_container {
+    display: flex;
+    justify-content: space-between;
+
+    color: $primary-font-color;
+    font-family: Tahoma, sans-serif;
+    font-size : 1em;
+
+    line-height: 1.7em;
+
+    text-indent: 0em;
+    text-align: right;
+
+    padding: auto;
+
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
 p.post_desc {
     text-indent: 0em;
+}
+
+li {
+    color: $primary-font-color;
+    font-family: Tahoma, sans-serif;
+    font-size : 1.125em;
+
+    line-height: 1.7em;
 }
 
 table {
@@ -222,13 +256,51 @@ code {
     font-size: 1em;
     font-family: Courier, Courier New, monospace;
     font-weight: normal;
+
+    background-color : #232323;
+
+    display: block;
+
+    padding-top: 0.75em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+
+    overflow-x: auto;
+
+    border-radius: 4px;
 }
 
-.language-plaintext {
+code.language-plaintext {
     color: $primary-font-color;
     font-size: 1em;
     font-family: Courier, Courier New, monospace;
     font-weight: normal;
+
+    display: inline;
+
+
+    padding-top:    0em;
+    padding-bottom: 0em;
+
+    background-color : #00000000;
+
+    padding-top:    0em;
+    padding-bottom: 0em;
+    padding-left:   0em;
+    padding-right:  0em;
+
+    margin-top:    0em;
+    margin-bottom: 0em;
+    margin-left:   0em;
+    margin-right:  0em;
+
+    border-radius: 0px;
 }
 
 .language-code_block {

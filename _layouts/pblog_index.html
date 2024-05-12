@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/blog_post.css">
+  </head>
+  <body>
+    <div class="main_div">
+      <p class = "super_title">
+        <span> <a href="/pblog.html">Home</a> </span>
+        <span> </span>
+      </p>
+      <h1> Blog Posts</h1>
+        {% for post in site.categories.pblog %}
+        <div class="post_listing">
+          <div class = "post_listing_container">
+            <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+            <p class="small_text"> {{ post.date | date: "%B %-d %Y" }}
+          </div>
+            
+            <p class="post_desc"> {{ post.description }} </p>
+        </div>
+        {% endfor %}
+    </div>
+  </body>
+</html>
