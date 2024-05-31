@@ -1,5 +1,5 @@
 $primary-font-color: #E0E0E0; 
-$primary-font-families: Arial, sans-serif;
+$primary-font-families: Tahoma, Arial, sans-serif;
 
 $main-div-color: #303030; 
 $main-div-border-color: #333333;
@@ -19,9 +19,28 @@ body {
     background-color : #232323;
 }
 
-a:link {
+
+p {
+    color: $primary-font-color;
+    font-family: $primary-font-families;
+    font-size : 1em;
+
+    line-height: 1.7em;
+
+    text-indent: 2em;
+    padding: 0em;
+
+    margin-top: 0.325em;
+    margin-bottom: 0.325em;
+}
+
+a {
+    text-decoration: underline;
     font-family: $primary-font-families;
     font-size: 1em;
+}
+
+a:link {
     font-weight: normal;
 
     color: $primary-font-color;
@@ -55,9 +74,7 @@ a:visited {
     padding-right:  0.0em;
 }
 
-p {
-    background-color : $content_background_color;
-    
+p {    
     border-top-left-radius: $paragraph_border_radius;
     border-top-right-radius: $paragraph_border_radius;
     
@@ -79,19 +96,6 @@ p {
 
     margin-top: 0em;
     margin-bottom: 0em;
-}
-
-p + p {
-    margin-top: -$paragraph_border_radius;
-    margin-bottom: 0em;
-
-    padding-top: $paragraph_border_radius;
-
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    
-    border-bottom-left-radius: $paragraph_border_radius;
-    border-bottom-right-radius: $paragraph_border_radius;
 }
 
 img {
