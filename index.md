@@ -48,7 +48,7 @@ of performant code. This lead me to develop an interest in creating
 hand-optimized implementations of various algorithms. I became fond of utilizing
 specialized CPU instructions, particularly SIMD instructions, and leveraging
 knowledge of computer architecture to maximize performance. In doing this, I
-became familiar with the performance that modern CPUs' can offer when programmed
+became familiar with the performance that modern CPUs can offer when programmed
 well, but also with how little of this potential is leveraged in practice. This
 inspired a certain degree of frustration, and a desire to better the situation.
 

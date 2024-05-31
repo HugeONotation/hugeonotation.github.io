@@ -3,9 +3,20 @@
 
 @import 'reset', 'common', 'blog';
 
+p.super_title {
+    margin-left: 1em;
+    margin-right: 1em;
+
+    padding-left: 0.0em;
+    padding-right: 0.0em;
+}
+
 div.post_listing_container {
     margin-left: 0.25em;
     margin-right: 0.25em;
+
+    padding-left: 0em;
+    padding-right: 0em;
 }
 
 div.main_div {

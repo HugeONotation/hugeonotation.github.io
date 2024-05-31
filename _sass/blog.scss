@@ -1,0 +1,246 @@
+$primary-font-color: #E0E0E0;
+$visited-font-color: #A0A0A0;
+$primary-font-families: Tahoma, sans-serif;
+
+body {
+    background-image: url('/assets/images/blog_background.png');
+    background-size: 18px;
+    background-color : #232323;
+}
+
+div.post_listing {
+    background-color : #404040;
+    text-align: left;
+
+    padding-top: 9px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+
+    border-radius: 0.5em;
+
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+}
+
+div.row {
+    display: flex;
+}
+
+div.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h2 {
+    padding-left: 0.0em;
+    padding-right: 0.0em;
+}
+
+h3 {
+    padding-left: 0.0em;
+    padding-right: 0.0em;
+}
+
+p.super_title {
+    display: flex;
+    justify-content: space-between;
+
+    text-indent: 0em;
+    text-align: right;
+
+    padding: auto;
+
+    margin-left: 0.0em;
+    margin-right: 0.0em;
+
+    padding-left: 0.0em;
+    padding-right: 0.0em;
+
+    margin-top: 0.5em;
+    margin-bottom: auto;
+}
+
+.small_text {
+    font-size : 0.85em;
+}
+
+div.post_listing_container {
+    display: flex;
+    justify-content: space-between;
+
+    color: $primary-font-color;
+    font-family: $primary-font-families;
+    font-size : 1em;
+
+    line-height: 1.7em;
+
+    text-indent: 0em;
+    text-align: right;
+
+    padding: auto;
+
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+p.post_desc {
+    text-indent: 0em;
+
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+}
+
+li {
+    color: $primary-font-color;
+    font-family: Tahoma, sans-serif;
+    font-size : 1.125em;
+
+    line-height: 1.7em;
+}
+
+li:before {
+    content:"• ";
+}
+
+table {
+    color: $primary-font-color;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+
+    width: 75%;
+    border: 1px solid;
+
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.5em;
+    border-top: 0.5em;
+
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+
+    text-align: center;
+}
+
+table.wide {
+    width: 95%;
+}
+
+table.narrow {
+    width: 40%;
+}
+
+th.slant {
+    transform:
+        translate(315deg)
+}
+
+ul {
+    color: $primary-font-color;
+    font-family: Tahoma, sans-serif;
+    padding-left: 2em;
+    font-size: 0.9em;
+}
+
+.centered_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.centered_image_narrow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+
+.centered_image_wide {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+code {
+    color: $primary-font-color;
+    font-size: 1em;
+    font-family: Courier, Courier New, monospace;
+    font-weight: normal;
+
+    background-color : #232323;
+
+    display: block;
+
+    padding-top: 0.75em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0em;
+    margin-right: 0em;
+
+    overflow-x: auto;
+
+    border-radius: 0.5em;
+}
+
+code.language-plaintext {
+    color: $primary-font-color;
+    font-size: 1em;
+    font-family: Courier, Courier New, monospace;
+    font-weight: normal;
+
+    display: inline;
+
+
+    padding-top:    0em;
+    padding-bottom: 0em;
+
+    background-color : #00000000;
+
+    padding-top:    0em;
+    padding-bottom: 0em;
+    padding-left:   0em;
+    padding-right:  0em;
+
+    margin-top:    0em;
+    margin-bottom: 0em;
+    margin-left:   0em;
+    margin-right:  0em;
+
+    border-radius: 0.0em;
+}
+
+.language-code_block {
+    color: $primary-font-color;
+    font-size: 1em;
+    font-family: Courier, Courier New, monospace;
+    font-weight: normal; 
+
+    display: block;
+    overflow: auto;
+    width: auto;
+}
+
+.small_text {
+    font-size: 0.875em;
+
+    padding-top:    0em;
+    padding-bottom: 0em;
+    padding-left:   0em;
+    padding-right:  0em;
+
+    margin-top:    0em;
+    margin-bottom: 0em;
+    margin-left:   0em;
+    margin-right:  0em;
+}

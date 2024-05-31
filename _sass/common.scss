@@ -1,4 +1,5 @@
-$primary-font-color: #E0E0E0; 
+$primary-font-color: #E0E0E0;
+$visited-font-color: #A0A0A0;
 $primary-font-families: Tahoma, sans-serif;
 
 $main-div-color: #303030; 
@@ -32,11 +33,11 @@ h1 {
     font-weight: normal;
     font-size: 1.9em;
 
-    margin-top: 0.0em;
-    margin-bottom: 0.0;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
 
-    padding-top: 0em;
-    padding-bottom: 0em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
 }
 
 h2 {
@@ -51,10 +52,12 @@ h2 {
 
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
 
     padding-top: 0em;
     padding-bottom: 0em;
-    padding-left: 0.5em;
+    padding-left: 0.25em;
     padding-right: 0.25em;
 }
 
@@ -89,6 +92,8 @@ p {
     font-family: $primary-font-families;
     font-size : 1em;
 
+    text-align: justify;
+
     line-height: 1.75em;
 
     text-indent: 2em;
@@ -102,40 +107,26 @@ a {
     text-decoration: underline;
     font-family: $primary-font-families;
     font-size: 1em;
+
+
+    margin-top:    0.0em;
+    margin-bottom: 0.0em;
+    margin-left:   0.0em;
+    margin-right:  0.0em;
+
+    padding-top:    0.0em;
+    padding-bottom: 0.0em;
+    padding-left:   0.0em;
+    padding-right:  0.0em;
+
+    font-weight: normal;
 }
 
 a:link {
-    font-weight: normal;
-
-    color: $primary-font-color;
-
-    margin-top:    0.0em;
-    margin-bottom: 0.0em;
-    margin-left:   0.0em;
-    margin-right:  0.0em;
-
-    padding-top:    0.0em;
-    padding-bottom: 0.0em;
-    padding-left:   0.0em;
-    padding-right:  0.0em;
 }
 
 a:visited {
-    font-family: $primary-font-families;
-    font-size: 1em;
-    font-weight: normal;
-
-    color: #A0A0A0;
-
-    margin-top:    0.0em;
-    margin-bottom: 0.0em;
-    margin-left:   0.0em;
-    margin-right:  0.0em;
-
-    padding-top:    0.0em;
-    padding-bottom: 0.0em;
-    padding-left:   0.0em;
-    padding-right:  0.0em;
+    color: $visited-font-color;
 }
 
 img {
@@ -160,12 +151,12 @@ img {
         margin-top: 1em;
         margin-bottom: 1em;
 
-        padding-top: 0.125em;
-        padding-left: 1em;
-        padding-right: 1em;
-        padding-bottom: 0.75em;
+        padding-top: 0.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        padding-bottom: 0.5em;
 
-        border-radius: 0.5em;
+        border-radius: 0.75em;
 
         border: solid $main-div-border-color 1px;
     }
@@ -187,12 +178,12 @@ img {
         margin-top: 1em;
         margin-bottom: 1em;
 
-        padding-top: 0.125em;
-        padding-left: 1em;
-        padding-right: 1em;
-        padding-bottom: 0.75em;
+        padding-top: 0.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        padding-bottom: 0.5em;
 
-        border-radius: 0.5em;
+        border-radius: 0.75em;
 
         border: solid $main-div-border-color 1px;
     }
