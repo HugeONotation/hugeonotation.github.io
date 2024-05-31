@@ -1,7 +1,7 @@
 ---
 ---
 
-@import 'reset', 'common', 'site_shared';
+@import 'reset', 'common';
 
 $primary-font-color: #E0E0E0;
 
@@ -39,107 +39,9 @@ div.row::after {
     clear: both;
     display: table;
 }
-
-
-
-h1 {
-    text-align: center;
-    text-indent: 0.5em;
-    
-    color: $heading_color;
-    
-    font-family: Tahoma, sans-serif;
-    font-weight: normal;
-    font-size: 1.9em;
-
-    margin-top: 0.25em;
-    margin-bottom: 0.25em;
-
-    //background:#3d3d3d;
-    border-radius: 6px;
-
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
-}
-
-h2 {
-    text-align: left;
-    text-indent: 0px;
-
-    color: $heading_color;
-    text-shadow: 0px 0px $heading_shadow_blur_radius $heading_shadow_color;
-
-    font-family: Tahoma, sans-serif;
-    font-weight: normal;
-    font-size: 1.5em;
-
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-
-    //background:#3d3d3d;
-    border-radius: 6px;
-
-    padding-top: 0em;
-    padding-bottom: 0em;
-    padding-left: 0.5em;
-    padding-right: 0.25em;
-}
-
-h3 {
-    text-align: left;
-    text-indent: 0em;
-
-
-    color: $heading_color;
-    text-shadow: 0px 0px $heading_shadow_blur_radius $heading_shadow_color;
-
-    font-family: Tahoma, sans-serif;
-    font-size: 1em;
-    font-weight: bold;
-
-    padding-left: 0.5em;
-}
-
-h4 {
-    text-align: left;
-    text-indent: 0em;
-
-    color: $heading_color;
-    text-shadow: 0px 0px $heading_shadow_blur_radius $heading_shadow_color;
-
-    font-family: Tahoma, sans-serif;
-    font-size: 0.9em;
-    font-weight: bold;
-}
-
-
-p {
-    color: $primary-font-color;
-    font-family: Tahoma, sans-serif;
-    font-size : 1em;
-
-    line-height: 1.7em;
-
-    text-indent: 2em;
-
-    padding-top: 0.125em;
-    padding-bottom: 0.125em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-
-    margin-top: 0.25em;
-    margin-bottom: 0.25em;
-}
-
 p.super_title {
     display: flex;
     justify-content: space-between;
-
-    color: $primary-font-color;
-    font-family: Tahoma, sans-serif;
-    font-size : 0.85em;
-
-    line-height: 1.7em;
 
     text-indent: 0em;
     text-align: right;

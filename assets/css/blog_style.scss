@@ -1,72 +1,11 @@
 ---
 ---
 
-@import 'reset', 'common', 'site_shared';
+@import 'reset', 'common';
 
 body {
     background-color : #232323;
     background-image: url('background.png');
-}
-
-h1 {
-    text-align: left;
-    text-indent: 0.5em;
-    
-    color: #E0E0E0;
-    
-    font-family: Tahoma, sans-serif;
-    font-weight: normal;
-    font-size: 2em;
-
-    margin-top: 0.25em;
-    margin-bottom: 0.25em;
-}
-
-h2 {
-    text-align: left;
-    text-indent: 0px;
-
-    color: #E0E0E0;
-
-    font-family: Tahoma, sans-serif;
-    font-weight: normal;
-    font-size: 1.5em;
-
-    margin-top: 0.0em;
-    margin-bottom: 0.5em;
-}
-
-h3 {
-    text-align: left;
-    text-indent: 0em;
-
-    color: #E0E0E0;
-    font-family: Tahoma, sans-serif;
-    font-size: 1em;
-    font-weight: bold;
-
-    /*
-    width: fit-content;
-
-    border-bottom: 2px solid;
-    border-color: #A0A0A0;
-    */
-}
-
-
-
-p {
-    color: #E0E0E0;
-    font-family: Tahoma, sans-serif;
-    font-size : 1em;
-
-    line-height: 1.7em;
-
-    text-indent: 2em;
-    padding: 0em;
-
-    margin-top: 0.325em;
-    margin-bottom: 0.325em;
 }
 
 p.aside {
