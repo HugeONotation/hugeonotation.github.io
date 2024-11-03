@@ -5,6 +5,7 @@ $primary-font-families: Tahoma, sans-serif;
 body {
     background-image: url('/assets/images/blog_background.png');
     background-size: 18px;
+
     background-color : #232323;
 }
 
@@ -33,7 +34,13 @@ div.row::after {
     display: table;
 }
 
+div.pad {
+    margin: 1em;
+}
+
 h2 {
+    padding-top: 0.5em;
+
     padding-left: 0.0em;
     padding-right: 0.0em;
 }
@@ -103,17 +110,12 @@ li {
     line-height: 1.7em;
 }
 
-li:before {
-    content:"• ";
-}
-
 table {
     color: $primary-font-color;
     font-family: 'Courier New', monospace;
-    font-size: 0.9em;
+    font-size: 1em;
 
     width: 75%;
-    border: 1px solid;
 
     border-left: none;
     border-right: none;
@@ -122,16 +124,35 @@ table {
 
     margin-bottom: 0.5em;
     margin-top: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
 
     text-align: center;
 }
 
 table.wide {
     width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.align_left {
+    text-align: left;
 }
 
 table.narrow {
     width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table_align_left_first_column td:first-child, th:first-child {
+    text-align: left;
+}​
+
+table.padding {
+    margin: 1em;
+    border: 1em;
 }
 
 th.slant {
@@ -142,8 +163,20 @@ th.slant {
 ul {
     color: $primary-font-color;
     font-family: Tahoma, sans-serif;
-    padding-left: 2em;
     font-size: 0.9em;
+
+    list-style-type: disc;
+    list-style-position: inside;
+    text-indent: -1em;
+
+    padding-left: 2em;
+
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+li::marker {
+    color: $primary-font-color;
 }
 
 .centered_image {

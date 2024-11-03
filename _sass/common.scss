@@ -71,6 +71,8 @@ h3 {
     font-size: 1em;
     font-weight: bold;
 
+    margin-top: 1.0em;
+    
     padding-left: 0.5em;
 }
 
@@ -83,6 +85,8 @@ h4 {
     font-family: $primary-font-families;
     font-size: 0.9em;
     font-weight: bold;
+
+    margin-top: 0.5em;
 }
 
 
@@ -140,8 +144,8 @@ img {
     div.main_div {
         background-color : $main-div-color;
 
-        width: 37.5em;
-        min-width: 80%;
+        width: 48em;
+        min-width: 90%;
         max-width: 95%;
 
         justify-content: center;
@@ -187,4 +191,12 @@ img {
 
         border: solid $main-div-border-color 1px;
     }
+}
+
+th {
+    font-weight: bold;
+}
+
+strong {
+    font-weight: bold;
 }
