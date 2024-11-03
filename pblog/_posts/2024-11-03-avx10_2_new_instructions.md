@@ -24,7 +24,7 @@ were originally introduced by AVX-512F. 256-bit instructions that could do the
 two last things were technically present with AVX-512VL, but now this is
 possible available without that extension.
 
-## Zero-Extending GPR to Vector Register Moves
+## Zero-Extending Moves to Vector Registers
 Two new instructions, `vmovw` and `vmovd` facilitate the common practice of
 moving a 16 or 32-bit element from memory into the first lane of an XMM register
 while zeroing out the remaining lanes. The 16 or 32-bit value does not need to
@@ -464,20 +464,20 @@ format, then the quantity represented is clamped to the nearest representable
 value in the target format.
 
 Existing conversion instructions have taken the approach of producing special
-values, such as `0x80000000` for conversions from 32-bit floats, or raising
-floating-point exceptions.
+values or raising floating-point exceptions. For example, `cvttss2si` and
+`cvtss2si` produce `0x80000000` for 32-bit operands when the input is too large
+in magnitude for signed 32-bit integers, when the input is infinity, or when the
+input is NaN.
 
 These new instructions also generally come in truncating and non-truncating
-forms. This is a concept that should be familiar from existing conversion
+forms. This is a pattern that should be familiar from existing conversion
 instructions since it dates back to SSE. The truncating forms of these
 instructions remove all fractional bits from the input when performing the
 conversion, effectively rounding towards zero. The non-truncating forms of these
-instructions default to using the current rounding mode to determine how to
-factor in fractional bits.
+instructions default to using the current rounding mode to determine how
+fractional bits are handled.
 
 The new conversion instructions are as follows:
-
-<br>
 
 * `vcvttss2sis` - Convert a single-precision float to a 32/64-bit signed int
   with truncation and saturation.
@@ -540,8 +540,6 @@ counterparts for brain floats. These follow the trend of always using
 rounding-to-nearest where the current rounding mode would be used, and of never
 raising floating-point exceptions.
 
-<br>
-
 * `vcvtnebf162ibs` - Convert brain floats to signed 8-bit ints with
   rounding-to-nearest and saturation.
 * `vcvtnebf162iubs` - Convert brain floats to unsigned 8-bit ints with
@@ -570,8 +568,6 @@ however.
 ### Conversions to Tiny Floats
 The majority of the operations involving tiny floats are conversions from
 half-precision floats to these smaller formats.
-
-<br>
 
 * `vcvtneph2bf8` - Convert half-precision floats to E5M2 floats
 * `vcvtneph2bf8s` - Convert half-precision floats to E5M2 floats with saturation
