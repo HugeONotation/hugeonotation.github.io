@@ -55,7 +55,7 @@ h2 {
     padding-top:    0.25em;
     padding-bottom: 0.25em;
     padding-left: 0.5em;
-    padding-right: 0.25em;
+    padding-right: 0.5em;
 
     margin-top: 0.5em;
     margin-bottom: 0em;
@@ -73,8 +73,20 @@ h3 {
 
     color: #E0E0E0;
     font-family: $content_font_families;
-    font-size: 1em;
+    font-size: 1.125em;
     font-weight: bold;
+
+    padding-top:    0.25em;
+    padding-bottom: 0.25em;
+    padding-left:   1.00em;
+    padding-right:  1.00em;
+
+    margin-top: -0.5em;
+    margin-bottom: 0em;
+}
+
+h3:before {
+    content: "› ";
 }
 
 h4 {
@@ -103,6 +115,8 @@ p {
     font-family: $content_font_families;
     font-size : 1em;
 
+    text-align: justify;
+
     line-height: 1.7em;
 
     text-indent: 2em;
@@ -114,8 +128,6 @@ p {
 
     margin-top: 0em;
     margin-bottom: 0em;
-
-    //white-space: nowrap;
 }
 
 p.list {
@@ -171,7 +183,25 @@ p + h2 {
     border-top-right-radius: $paragraph_border_radius;
 }
 
+p + h3 {
+    background-color : $content_background_color;
+
+    border-top-left-radius: $paragraph_border_radius;
+    border-top-right-radius: $paragraph_border_radius;
+}
+
 h2 + p {
+    background-color : $content_background_color;
+    margin-top: -$paragraph_border_radius;
+    margin-bottom: 0em;
+
+    padding-top: $paragraph_border_radius;
+
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+h3 + p {
     background-color : $content_background_color;
     margin-top: -$paragraph_border_radius;
     margin-bottom: 0em;
