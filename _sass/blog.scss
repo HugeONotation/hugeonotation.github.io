@@ -102,14 +102,6 @@ p.post_desc {
     padding-right: 0.25em;
 }
 
-li {
-    color: $primary-font-color;
-    font-family: Tahoma, sans-serif;
-    font-size : 1.125em;
-
-    line-height: 1.7em;
-}
-
 table {
     color: $primary-font-color;
     font-family: 'Courier New', monospace;
@@ -173,10 +165,6 @@ ul {
 
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-}
-
-li::marker {
-    color: $primary-font-color;
 }
 
 .centered_image {

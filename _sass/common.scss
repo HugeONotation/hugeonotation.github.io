@@ -200,3 +200,30 @@ th {
 strong {
     font-weight: bold;
 }
+
+li {
+    color: $primary-font-color;
+    font-family: Tahoma, sans-serif;
+    font-size : 1.125em;
+
+    line-height: 1.7em;
+}
+
+li::marker {
+    color: $primary-font-color;
+}
+
+ul {
+    color: $primary-font-color;
+    font-family: Tahoma, sans-serif;
+    font-size: 0.9em;
+
+    list-style-type: disc;
+    list-style-position: inside;
+    text-indent: -1em;
+
+    padding-left: 2em;
+
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}

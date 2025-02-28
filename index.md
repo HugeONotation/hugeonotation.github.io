@@ -51,12 +51,12 @@ make it substantially easier to write code that leverages modern hardware's
 capabilities. Similarly, I believe it may facilitate the usage of patterns which
 although powerful are cumbersome to use with existing languages.
 
-## Volunteer
+## Events Volunteered
 * CppCon 2024
 * CppOnline 2025
 
 ## Talks
-* CppOnline 2025
+* CppOnline 2025 Open Content
 
 ## Links:
 
