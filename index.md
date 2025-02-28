@@ -4,15 +4,15 @@ title: Home
 ---
 
 # Home
-My name is Hugo. I'm a hobbyist programmer of nine years looking to enter the
-field of software development. I received my bachelor's degree in computer
-science from the University of California: Riverside.
+My name is Hugo. I'm a hobbyist programmer looking to enter the field of
+software development. I received my bachelor's degree in computer science from
+the University of California: Riverside.
 
 My biggest interests are in working close to the hardware, computer graphics,
 and writing performant code, primarily through SIMD vectorization. To a lesser
 extent, I am also interested in other forms of parallelism such as GPU
 programming and multi-threading. I'm particularly fond of C++ and Linux
-environments, although I also use Python and Windows as appropriate.
+environments, although I make use Python and Windows as appropriate.
 
 My interest in programming was initially motivated by a more general interest in
 computer graphics. Writing small scripts was useful for an artistic project of
@@ -22,10 +22,10 @@ tools for the production of digital art. I initially spent around a year
 focusing on Java, but quickly moved to C++ since it was more suitable for using
 OpenGL. For a number of subsequent years, I focused on programming graphics. I
 further familiarized myself with OpenGL and to a lesser extent Vulkan, using
-them to write some (frankly overly-ambitious) rasterizers, alongside some CPU
-ray-tracers. But I generally jumped between exploring various facets of the
-field: from rendering theory to writing shaders, from optimizing acceleration
-structures, to implementing procedural textures.
+them to dabble with the writing of rasterizers, alongside some CPU ray-tracers.
+But I generally jumped between exploring various facets of the field: from
+rendering theory to writing shaders, from optimizing acceleration structures, to
+implementing procedural textures.
 
 Around the same time, I also started familiarizing myself with the 3D computer
 graphics application known as Blender. Over time, I found myself gradually
@@ -50,6 +50,13 @@ design. It seems likely to me that a well-designed programming language could
 make it substantially easier to write code that leverages modern hardware's
 capabilities. Similarly, I believe it may facilitate the usage of patterns which
 although powerful are cumbersome to use with existing languages.
+
+## Volunteer
+* CppCon 2024
+* CppOnline 2025
+
+## Talks
+* CppOnline 2025
 
 ## Links:
 
