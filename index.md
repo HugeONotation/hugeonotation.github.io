@@ -32,10 +32,11 @@ graphics application known as Blender. Over time, I found myself gradually
 gaining an ability to answer the questions others would ask in Blender's online
 communities. Doing this for a number of years earned me some recognition within
 one of these communities, a community that was eventually entrusted to me. With
-1.2 million members, it's one of Blender's largest online communities, and one
-of the largest communities of 3D artists in general. Although, I no longer focus
-on programming graphics as much as I once did, I continue to use my technical
-knowledge to help 3D artists understand and make the most of their software.
+more than one-million members, it's one of Blender's largest online communities,
+and one of the largest communities of 3D artists in general. Although, I no
+longer focus on programming graphics as much as I once did, I continue to use my
+technical knowledge to help 3D artists understand and make the most of their
+software.
 
 While diving into computer graphics, I developed an interest in creating
 hand-optimized algorithm implementations. I became fond of utilizing specialized
@@ -56,7 +57,10 @@ although powerful are cumbersome to use with existing languages.
 * CppOnline 2025
 
 ## Talks
-* CppOnline 2025 Open Content
+* **CppOnline 2025 Open Content:** The Neglected Majority of x86 - SIMD
+    * [Script](./talks/x86_simd_script.html)
+    * [Slides(ODP)](https://drive.google.com/file/d/1KefBBmCnJvNv-pce_vPaz31lInqpq4oK/view?usp=sharing)
+    * [Slides (PDF)](https://drive.google.com/file/d/1aTn1_MqXcU-Ih6Y10PJ8tnzChbBnMb0z/view?usp=sharing)
 
 ## Links:
 
