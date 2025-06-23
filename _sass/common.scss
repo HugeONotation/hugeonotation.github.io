@@ -1,4 +1,7 @@
 $primary-font-color: #E0E0E0;
+$secondary-font-color: #f0f0f0;
+$tertiary-font-color: #606060;
+
 $visited-font-color: #A0A0A0;
 $primary-font-families: Tahoma, sans-serif;
 
@@ -16,6 +19,7 @@ html {
 body {
     background-image: url("/assets/images/blog_background.png");
     background-size: 18px;
+    background-attachment: fixed;
     background-color : #232323;
 }
 
@@ -27,7 +31,7 @@ h1 {
     text-align: center;
     text-indent: 0em;
 
-    color: $primary-font-color;
+    color: $secondary-font-color;
     
     font-family: $primary-font-families;
     font-weight: normal;
@@ -44,49 +48,65 @@ h2 {
     text-align: left;
     text-indent: 0em;
 
-    color: $primary-font-color;
+    color: $secondary-font-color;
 
     font-family: $primary-font-families;
     font-weight: normal;
     font-size: 1.5em;
 
     margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.25em;
     padding-left: 0.25em;
     padding-right: 0.25em;
 
     padding-top: 0em;
-    padding-bottom: 0em;
+    padding-bottom: 0.25em;
     padding-left: 0.25em;
     padding-right: 0.25em;
+
+    //border-bottom: 2px ridge $tertiary-font-color;
+
+    border-bottom: 1px solid $tertiary-font-color;
+    box-shadow: 0px 1px 0px 0px #404040;
 }
 
 h3 {
     text-align: left;
     text-indent: 0em;
 
-    color: $primary-font-color;
+    color: $secondary-font-color;
 
     font-family: $primary-font-families;
-    font-size: 1em;
+    font-size: 1.25em;
     font-weight: bold;
 
-    margin-top: 1.0em;
+    margin-top: 0.75em;
+    margin-bottom: 0.5em;
     
     padding-left: 0.5em;
 }
 
 h4 {
+
     text-align: left;
     text-indent: 0em;
 
-    color: $primary-font-color;
+    color: $secondary-font-color;
 
     font-family: $primary-font-families;
-    font-size: 0.9em;
+    font-size: 1.0em;
     font-weight: bold;
 
-    margin-top: 0.5em;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+
+    margin-left: 0.25em;
+}
+
+h4:before {
+    content: "› ";
+    -webkit-text-size-adjust: none;
+    font-size: 1em;
 }
 
 
@@ -98,13 +118,17 @@ p {
 
     text-align: justify;
 
-    line-height: 1.75em;
+    line-height: 1.5em;
 
-    text-indent: 2em;
+    text-indent: 1.5em;
     padding: 0em;
 
     margin-top: 0.325em;
     margin-bottom: 0.325em;
+}
+
+p.no_indent {
+    text-indent: 0.0em;
 }
 
 a {
@@ -195,6 +219,11 @@ img {
 
 th {
     font-weight: bold;
+    line-height: 1.5em;
+}
+
+td {
+    line-height: 1.25em;
 }
 
 strong {
@@ -206,7 +235,7 @@ li {
     font-family: Tahoma, sans-serif;
     font-size : 1.125em;
 
-    line-height: 1.7em;
+    line-height: 1.5em;
 }
 
 li::marker {
@@ -226,4 +255,24 @@ ul {
 
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+}
+
+hr {
+    border: 0;
+    clear: both;
+    display:block;
+    width: 100%;               
+    background-color:$tertiary-font-color;
+    height: 1px;
+}
+
+.invert {
+    color: #303030;
+    background-color:#757575;
+    border-radius: 0.25em;
+}
+
+sub {
+    vertical-align: sub;
+    font-size: smaller;
 }

@@ -5,7 +5,7 @@ $primary-font-families: Tahoma, sans-serif;
 body {
     background-image: url('/assets/images/blog_background.png');
     background-size: 18px;
-
+    background-attachment: fixed;
     background-color : #232323;
 }
 
@@ -50,6 +50,11 @@ h3 {
     padding-right: 0.0em;
 }
 
+h4 {
+    padding-left: 0.0em;
+    padding-right: 0.0em;
+}
+
 p.super_title {
     display: flex;
     justify-content: space-between;
@@ -67,6 +72,10 @@ p.super_title {
 
     margin-top: 0.5em;
     margin-bottom: auto;
+}
+
+p.no_indent {
+    text-indent: 0em;
 }
 
 .small_text {
@@ -114,8 +123,8 @@ table {
     border-bottom: 0.5em;
     border-top: 0.5em;
 
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
+    margin-bottom: 1.0em;
+    margin-top: 1.0em;
     margin-left: auto;
     margin-right: auto;
 

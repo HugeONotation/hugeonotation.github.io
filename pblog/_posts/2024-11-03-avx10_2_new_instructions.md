@@ -230,14 +230,14 @@ casually reading this would be to work backwards by trying to map the rows onto
 what we would expect from the comparison operators in mainstream programming
 languages:
 
-| Operator | Behavior | Matches        |
-|----------|----------|----------------|
-| <        | 0 1 0 0  | -              |
-| <=       | 0 1 1 0  | -              |
-| >        | 0 0 0 1  | A, NBE         |
-| >=       | 0 0 1 1  | AE, NB         |
-| ==       | 0 0 1 0  | -              |
-| !=       | 1 1 0 1  | -              |
+| Operator | Behavior | Matches      |
+|----------|----------|--------------|
+| <        | 0 1 0 0  | -            |
+| <=       | 0 1 1 0  | -            |
+| >        | 0 0 0 1  | A, NBE&nbsp;&nbsp;&nbsp;&nbsp; |
+| >=       | 0 0 1 1  | AE, NB       |
+| ==       | 0 0 1 0  | -            |
+| !=       | 1 1 0 1  | -            |
 {: .table.align_left  }
 
 A few things may stand out here. First, most comparisons operators have no
@@ -246,14 +246,14 @@ condition codes that relate to comparisons fit into this table. If we construct
 a table but for cases where the operators handle unordered relationships in the
 opposite fashion, more condition codes are given a place:
 
-| Operator | Behavior | Matches        |
-|----------|----------|----------------|
-| <        | 1 1 0 0  | B, NAE         |
-| <=       | 1 1 1 0  | BE, NA         |
-| >        | 1 0 0 1  | -              |
-| >=       | 1 0 1 1  | -              |
-| ==       | 1 0 1 0  | E, LE, NG      |
-| !=       | 0 1 0 1  | NE, NLE, G,    |
+| Operator | Behavior | Matches    |
+|----------|----------|------------|
+| <        | 1 1 0 0  | B, NAE     |
+| <=       | 1 1 1 0  | BE, NA     |
+| >        | 1 0 0 1  | -          |
+| >=       | 1 0 1 1  | -          |
+| ==       | 1 0 1 0  | E, LE, NG  |
+| !=       | 0 1 0 1  | NE, NLE, G |
 {: .table.align_left  }
 
 However, even then, there are still condition codes that don't fit into either
@@ -484,14 +484,14 @@ The new conversion instructions are as follows:
 * `vcvttss2usis` - Convert a single-precision float to a 32/64-bit unsigned int
   with truncation and saturation.
 
-<br>
+<hr>
 
 * `vcvttsd2sis` - Convert a double-precision float to a 32/64-bit signed int
   with truncation and saturation.
 * `vcvttsd2usis` - Convert a double-precision float to a 32/64-bit unsigned int
   with truncation and saturation.
 
-<br>
+<hr>
 
 * `vcvtph2ibs` - Convert half-precision floats to signed 8-bit ints with saturation
 * `vcvtph2iubs` - Convert half-precision floats to unsigned 8-bit ints with saturation
@@ -500,7 +500,7 @@ The new conversion instructions are as follows:
 * `vcvttph2iubs` - Convert half-precision floats to unsigned 8-bit ints with
   truncation and saturation
 
-<br>
+<hr>
 
 * `vcvttps2dqs` - Convert single-precision floats to signed 32-bit ints with
   truncation and saturation
@@ -511,7 +511,7 @@ The new conversion instructions are as follows:
 * `vcvttps2uqqs` - Convert single-precision floats to unsigned 64-bit ints with
   truncation and saturation
 
-<br>
+<hr>
 
 * `vcvtps2ibs` - Convert single-precision floats to signed 8-bit ints with
   saturation.
@@ -522,7 +522,7 @@ The new conversion instructions are as follows:
 * `vcvttps2iubs` - Convert single-precision floats to unsigned 8-bit ints with
   truncation and saturation.
 
-<br>
+<hr>
 
 * `vcvttpd2dqs` - Convert double-precision floats to signed 32-bit ints with
   truncation and saturation
@@ -532,8 +532,6 @@ The new conversion instructions are as follows:
   truncation and saturation
 * `vcvttpd2uqqs` - Convert double-precision float to unsigned 64-bit ints with
   truncation and saturation
-
-<br>
 
 In addition to the previously listed conversions, there are also new
 counterparts for brain floats. These follow the trend of always using
@@ -574,7 +572,7 @@ half-precision floats to these smaller formats.
 * `vcvtneph2hf8` - Convert half-precision floats to E4M3 floats
 * `vcvtneph2hf8s` - Convert half-precision floats to E4M3 floats with saturation
 
-<br>
+<hr>
 
 * `vcvtne2ph2bf8` - Convert two vectors of half-precision floats to a single
   vector of E5M2 floats.

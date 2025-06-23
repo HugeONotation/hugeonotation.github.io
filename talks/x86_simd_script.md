@@ -3,6 +3,12 @@ layout: singular_page
 title: The Neglected Majority of x86 - SIMD
 ---
 
+• [Slides(ODP)](https://drive.google.com/file/d/1KefBBmCnJvNv-pce_vPaz31lInqpq4oK/view?usp=sharing)
+{: .p.no_indent }
+
+• [Slides(PDF)](https://drive.google.com/file/d/1aTn1_MqXcU-Ih6Y10PJ8tnzChbBnMb0z/view?usp=sharing)
+{: .p.no_indent }
+
 ## x87 and MMX History
 
 When x86 was originally created, it lacked dedicated floating-point facilities.
@@ -429,7 +435,7 @@ library as being our most primitive algorithmic building blocks. In my view,
 learning to how write SIMD is fundamentally a matter of developing a familiarity
 with a new set of primitive operations, and developing a fluency in their use,
 much in the same manner that we all did when we first learned how to work with
-ints, floats, if-statements, etc.
+ints, floats, if statements, etc.
 
 Naturally, this means first step to becoming proficient at working with x86 SIMD
 is to become familiar with this new set of primitive operations. Since we’re
@@ -970,16 +976,16 @@ The second option is to simply zero out the lanes which the mask marks as
 inactive. The intrinsics for using this zero masking will have “maskz” prefixed
 to the name of their operation instead.
 
-### If-Statements
+### If statements
 
-When talking about branches, if-statement are probably the first thing to come
-to mind. While not all if-statements can be vectorized, a decently wide range of
+When talking about branches, if statement are probably the first thing to come
+to mind. While not all if statements can be vectorized, a decently wide range of
 simple if statements can be vectorized somewhat easily and in a somewhat
 systematic fashion. This is especially the case for if-elses that looks
 something like this.
 
 In particular, note that the two blocks of conditional code are simply assigning
-to some variables that exist outside of the scope of the if-statement itself.
+to some variables that exist outside of the scope of the if statement itself.
 I’m going to assume that the expressions here can be computed without external
 side effects and that this means the individual expressions can be vectorized in
 a vertical fashion.
@@ -1007,10 +1013,10 @@ This gets the two expressions being assigned to the variables to be equivalent,
 meaning we can factor them out completely as well.
 
 At this point we can detach the else clause by turning it into a separate
-if-statement, predicated on the negation of the original condition.
+if statement, predicated on the negation of the original condition.
 
 And the very last transformation we’ll do to this code is to replace these
-simplified if-statements with blend operations. These will select between each
+simplified if statements with blend operations. These will select between each
 variable’s original value and their new value, then assign the result
 unconditionally.
 
@@ -1020,7 +1026,7 @@ their SIMD counterparts.
 
 I would like to point out that these kinds of transformations may also be
 applied to while loops since they are essentially just repeated if statements.
-So this kind of thinking not only permits for simple if-statements to be
+So this kind of thinking not only permits for simple if statements to be
 vectorized, but simple loops as well.
 
 ### Partitioning/Filtering
@@ -1033,7 +1039,7 @@ out is essentially lost potential.
 In such a case it’s generally beneficial to first coalesce elements based on
 which branch they need to go down so they are adjacent in memory.
 
-For an if-statement, this generally means filtering the data, which you might do
+For an if statement, this generally means filtering the data, which you might do
 with something to the effect of std::copy_if.
 
 If it’s an if-else, then you’ll want to ensure the data is partition the data
