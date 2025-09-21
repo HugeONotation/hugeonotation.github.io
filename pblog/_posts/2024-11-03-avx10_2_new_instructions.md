@@ -31,9 +31,8 @@ while zeroing out the remaining lanes. The 16 or 32-bit value does not need to
 come from memory, and can instead come from another XMM register, making it a
 bit terser to copy the first lane from one vector to another.
 
-These two instructions aren't the most exciting in the world, but are bound to
-help shave a few cycles off our execution times and a few bytes off our
-executable sizes.
+WHile, not the most exciting things in the world, they are bound to help shave a
+few cycles off our execution times and a few bytes off our executable sizes.
 
 ## Double-wide Single-Precision to Half-Precision
 `vcvt2ps2phx` converts two vectors of single-precision floats to a single vector
@@ -183,12 +182,12 @@ signed integers.
 
 But which condition codes do you use when comparing floats?
 
-Things get more subtle there however. Some more background information is
-necessary to make sense of the situation. It's been mentioned that these
-comparison instructions report their results through the EFLAGS registers. When
-it comes to the older floating-point comparisons, they set the ZF, PF, CF flags
-based on the relationship that exists between the two inputs. The AF, OF, SF
-flags are unconditionally set to zero. The patterns are set as follows:
+Things get more subtle there and some more background information is necessary
+to make sense of the situation. It's been mentioned that these comparison
+instructions report their results through the EFLAGS registers. When it comes to
+the older floating-point comparisons, they set the ZF, PF, CF flags based on the
+relationship that exists between the two inputs. The AF, OF, SF flags are
+unconditionally set to zero. The patterns are set as follows:
 
 | Comparison:  | AF | OF | SF | ZF | PF | CF |
 |--------------|----|----|----|----|----|----|
@@ -258,7 +257,7 @@ opposite fashion, more condition codes are given a place:
 
 However, even then, there are still condition codes that don't fit into either
 table: L, NGE, GE, and NL. The first two always produce false, and the last two
-always produce true, and therefore of no real practical value.
+always produce true, and therefore are of no real practical value.
 
 If we wish to test for a greater-than or greater-than-or-equal relationship, we
 can just use the Above and Above-Equal condition codes. If we wish to test for
