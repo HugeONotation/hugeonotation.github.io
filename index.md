@@ -52,16 +52,6 @@ make it substantially easier to write code that leverages modern hardware's
 capabilities. Similarly, I believe it may facilitate the usage of patterns which
 although powerful are cumbersome to use with existing languages.
 
-## Events Volunteered
-* CppCon 2024
-* CppOnline 2025
-
-## Talks
-* **CppOnline 2025 Open Content:** The Neglected Majority of x86 - SIMD
-    * [Script](./talks/x86_simd_script.html)
-    * [Slides(ODP)](https://drive.google.com/file/d/1KefBBmCnJvNv-pce_vPaz31lInqpq4oK/view?usp=sharing)
-    * [Slides (PDF)](https://drive.google.com/file/d/1aTn1_MqXcU-Ih6Y10PJ8tnzChbBnMb0z/view?usp=sharing)
-
 ## Links:
 
 [My Programming Blog](./pblog.html) - Thoughts and problems that caught my
@@ -74,3 +64,14 @@ attention
 <!---
 [The Blender Shader Node Editor](./bn/toc.html)
 -->
+
+## Talks
+* **CppOnline 2025 Open Content:** An Intro to the Neglected Majority of x86 - SIMD
+    * [Script](./talks/x86_simd_script.html)
+    * [Slides(ODP)](https://drive.google.com/file/d/1KefBBmCnJvNv-pce_vPaz31lInqpq4oK/view?usp=sharing)
+    * [Slides(PDF)](https://drive.google.com/file/d/1aTn1_MqXcU-Ih6Y10PJ8tnzChbBnMb0z/view?usp=sharing)
+    
+
+## Events Volunteered
+* CppCon 2024
+* CppOnline 2025
