@@ -78,6 +78,16 @@ p.no_indent {
     text-indent: 0em;
 }
 
+blockquote {
+    font-size: 1.0em;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#272727;
+    border-radius: 0.5em;
+    padding: 1.5em;
+}
+
 .small_text {
     font-size : 0.85em;
 }
@@ -258,4 +268,68 @@ code.language-plaintext {
     margin-bottom: 0em;
     margin-left:   0em;
     margin-right:  0em;
+}
+
+details {
+    color: $primary-font-color;
+    background-color: #3c3c3c;
+    //border: 1px solid  $tertiary-font-color;
+    border-radius: 0.5em;
+    padding: 0.5em 0.5em 0;
+
+
+    color: $primary-font-color;
+    font-family: $primary-font-families;
+    font-size : 1em;
+
+    text-align: justify;
+
+    line-height: 1.5em;
+    text-indent: 1.5em;
+
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+details[open] {
+    color: $primary-font-color;
+
+    padding-bottom: 0.5em;
+}
+
+details[open] summary {
+    color: $secondary-font-color;
+
+    padding-bottom: 0.5em;
+}
+
+summary {
+    color: $secondary-font-color;
+    font-weight: bold;
+    text-indent: 0em;
+
+    padding: 0em;
+    margin: 0em;
+
+    margin-left: -0.25em;
+}
+
+details > summary:before {
+    content: "• ";
+    display: inline-block;
+    width: 1em;
+    -webkit-text-size-adjust: none;
+}
+
+
+details[open] > summary:before {
+    display: inline-block;
+    content: "◦ ";
+    width: 1em;
+    -webkit-text-size-adjust: none;
 }

@@ -3,7 +3,7 @@
 
 @import 'site_shared';
 
-$paragraph_border_radius: 0.4em;
+$paragraph_border_radius: 0.5em;
 $content_background_color: #393939;
 $content_font_families: Tahoma, sans-serif;
 
@@ -176,6 +176,10 @@ p + p {
     border-bottom-right-radius: $paragraph_border_radius;
 }
 
+p.no_indent {
+    text-indent: 0em;
+}
+
 p + h2 {
     background-color : $content_background_color;
 
@@ -211,6 +215,60 @@ h3 + p {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
 }
+
+ul + p {
+    margin-top: -$paragraph_border_radius;
+    margin-bottom: 0em;
+
+    padding-top: $paragraph_border_radius;
+
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    
+    border-bottom-left-radius: $paragraph_border_radius;
+    border-bottom-right-radius: $paragraph_border_radius;
+}
+
+p + ul {
+    background-color : $content_background_color;
+    margin-top: -$paragraph_border_radius;
+    margin-bottom: 0em;
+
+    padding-top: $paragraph_border_radius;
+
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+h2 + ul {
+    background-color : $content_background_color;
+    margin-top: -$paragraph_border_radius;
+    margin-bottom: 0em;
+
+    padding-top: $paragraph_border_radius;
+
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+ul {
+    background-color : $content_background_color;
+
+    border-top-left-radius: $paragraph_border_radius;
+    border-top-right-radius: $paragraph_border_radius;
+
+    border-bottom-left-radius: $paragraph_border_radius;
+    border-bottom-right-radius: $paragraph_border_radius;
+
+    padding-top:    0.5em;
+    padding-bottom: 0.5em;
+    padding-left:   1em;
+    padding-right:  1em;
+
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
 
 table {
     color: #E0E0E0;
@@ -264,4 +322,14 @@ code {
     overflow: auto;
 
     width: auto;
+}
+
+.TODO:before {
+    content: "TODO: "
+}
+
+.TODO {
+    color: #f03c3c;
+    text-decoration: underline dotted;
+    text-indent: 0.0em;
 }
