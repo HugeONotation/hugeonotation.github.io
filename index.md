@@ -32,11 +32,10 @@ graphics application known as Blender. Over time, I found myself gradually
 gaining an ability to answer the questions others would ask in Blender's online
 communities. Doing this for a number of years earned me some recognition within
 one of these communities, a community that was eventually entrusted to me. With
-more than one-million members, it's one of Blender's largest online communities,
-and one of the largest communities of 3D artists in general. Although, I no
-longer focus on programming graphics as much as I once did, I continue to use my
-technical knowledge to help 3D artists understand and make the most of their
-software.
+more than one-million members, this means I run one of Blender's largest online
+communities. Although, I no longer focus on programming graphics as much as I
+once did, I continue to use my technical knowledge to help 3D artists understand
+and make the most of their software.
 
 While diving into computer graphics, I developed an interest in creating
 hand-optimized algorithm implementations. I became fond of utilizing specialized
@@ -64,8 +63,7 @@ although powerful are cumbersome to use with existing languages.
 * CppOnline 2025
 
 ## Links:
-
-[My Programming Blog](./pblog.html) - Thoughts and problems that caught my
+* [**My Programming Blog**](./pblog.html) - Thoughts and problems that caught my
 attention
 
 <!---
